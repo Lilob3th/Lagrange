@@ -38,3 +38,5 @@ if rta[0] == "c":"La respuesta es incorrecta."
 if rta[0] == "d":"La respuesta es incorrecta."
 
 st.text_input("**5. Explique con sus palabras en qué consiste el método de multiplicadores de Lagrange y respode: ¿para qué se utilizan?**") 
+
+st.image("imagenes/motivacion.jpg")
