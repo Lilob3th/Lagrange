@@ -1,7 +1,6 @@
 import streamlit as st
 
-st.title("Conceptos importantes")
-
+st.html("<center><h1> Conceptos importantes </h1>")
 
 with st.container(border=True):    
 

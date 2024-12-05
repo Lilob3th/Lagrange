@@ -1,8 +1,12 @@
 import streamlit as st
 from sympy import *
 
-st.title("Exploremos")
+st.html("<center><h1> Exploremos </h1>")
+st.html("<center><h2> ¡Es momento de que practiques! </h2>")
 
+st.markdown("Recuerda lo siguiente al momento de escribir tanto la función como la restricción: ")
+
+st.image("https://media.licdn.com/dms/image/v2/D4E12AQHnCUmXofwf1w/article-inline_image-shrink_400_744/article-inline_image-shrink_400_744/0/1686628143167?e=1737590400&v=beta&t=QWZAz-EkbjtFtuOa3m9zF0YqFimwVjkjfV95b4Sua3M")
 
 x,y = symbols('x y')
 l = symbols("l")
@@ -16,6 +20,8 @@ st.latex( latex(f) )
 g = parse_expr(st.text_input("Digite la restricción: ", value="x**2 + y**2 - 1"))
 
 st.latex( latex(g) )
+
+st.markdown("Ahora, vemos cuales son los puntos máximos y mínimos de la funcion y la restriccion que escogiste:")
 
 # halla las derivadas
 fx = diff(f, x)
@@ -42,7 +48,7 @@ maximos = max(vals)
 minimos = min(vals)
 
 # mostrando la solución
-st.header("PUNTOS MÁXIMOS Y MÍNIMOS")
+st.html("<center><h2> Puntos máximos y mínimos </h1>")
 c1, c2=st.columns(2, vertical_alignment="center")
 
 for i in range(len(vals)):
