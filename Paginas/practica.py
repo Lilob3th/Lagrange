@@ -39,4 +39,4 @@ if rta[0] == "d":"La respuesta es incorrecta."
 
 st.text_input("**5. Explique con sus palabras en qué consiste el método de multiplicadores de Lagrange y respode: ¿para qué se utilizan?**") 
 
-st.image("imagenes/motivacion.jpg")
+st.html("<center> <img src='https://i.pinimg.com/474x/16/c9/f4/16c9f4e78f9509cf5b401dd147631e11.jpg'> </center>")
